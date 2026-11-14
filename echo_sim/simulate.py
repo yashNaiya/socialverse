@@ -1,6 +1,6 @@
 """Experiment runs: a fresh, isolated population every time (for controlled
 comparisons between feed policies). For a platform that keeps growing across
-sessions, use `python -m echo_sim.world` instead.
+sessions, use `python -m socialverse` instead.
 
     python -m echo_sim.simulate --mode mock --agents 30 --ticks 15 --policy engagement
     python -m echo_sim.simulate --mode ollama --agents 10 --ticks 5 --policy personalized

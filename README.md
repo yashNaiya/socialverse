@@ -12,7 +12,7 @@ The **feed-ranking algorithm** is the experimental variable. The platform lets y
 
 Everything runs on your computer: there is no cloud, no paid AI, and nothing is exposed to the network.
 
-> Socialverse is built on **Echo** (`echo_sim/`), the research core: safety, topics, personas, sandbox, ranking and analysis. The earlier MERN app ("reddish") is preserved on the `archive/reddish-mern` branch.
+> Socialverse is built on **Echo** (`echo_sim/`), the research core: safety, topics, personas, sandbox, ranking and analysis. 
 
 ## Run it
 
@@ -21,7 +21,7 @@ Everything runs on your computer: there is no cloud, no paid AI, and nothing is 
 python -m venv .venv
 .venv\Scripts\activate                 # macOS/Linux: source .venv/bin/activate
 pip install -r requirements.txt
-pytest -q                              # 127 tests
+pytest -q                              # 113 tests
 
 # 2. Frontend (Node 18+), built once
 cd web
@@ -144,9 +144,8 @@ Note: if the project sits in a cloud-synced folder (e.g. OneDrive), that folder 
 
 ## Echo: research tools and baselines
 
-Echo's original tools still work and share the same safety core:
+Echo's experiment runner shares the same safety core:
 - `python -m echo_sim.simulate --mode mock --agents 40 --ticks 20 --policy personalized`: one-shot, reproducible experiment runs (`runs/<id>/run.json`), useful for fair policy comparisons with a fixed seed.
-- `python -m echo_sim.world …` + `streamlit run dashboard.py`: the earlier persistent-world CLI and Streamlit dashboard (schema v2).
 
 Mock baseline (40 agents, 20 rounds, seed 42):
 

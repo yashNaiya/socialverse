@@ -3,7 +3,6 @@
 .env.*
 !.env.example
 *.env
-.legacy/
 
 # Python
 __pycache__/
@@ -30,3 +29,4 @@ Thumbs.db
 # Frontend
 web/node_modules/
 web/dist/
+*.tsbuildinfo
