@@ -1,0 +1,9 @@
+# Dashboard is local-only: bind to loopback, keep XSRF protection, no telemetry.
+[server]
+address = "localhost"
+enableXsrfProtection = true
+enableCORS = true
+headless = true
+
+[browser]
+gatherUsageStats = false
